@@ -1,0 +1,491 @@
+ body{
+    margin:0;
+    min-height: 150vh;
+    background-color: rgb(37, 38, 37);
+} 
+body::selection{
+    background-color: rgb(123, 117, 48);;
+}
+html{
+    scroll-behavior: smooth;
+}
+
+.nav{
+    margin-bottom: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap:100px;
+    /* position:fixed; */
+}
+.a{
+    color: rgb(125, 125, 112);
+}
+.a:hover{
+   color:rgb(147, 107, 34);
+}
+
+h2{
+    color: rgb(27, 27, 26);
+    display: flex;
+    justify-content: center;
+    font-size: 40px;
+    background: rgb(123, 117, 48);
+    background-size: 1000px;
+    padding: 10px;
+}
+
+.container{
+    margin-left: 80px;
+    font-size: 70px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-style: inherit;
+    font-weight: bold;
+    color: rgb(206, 206, 189);
+    position: relative;
+    top: -45px;
+}
+
+span{
+    color:rgb(123, 117, 48);
+}
+
+img{
+    margin-left: 840px;
+    border-radius: 100%;
+    height: 350px;
+    width: 350px;
+    box-shadow: 10px 5px 5px rgb(123, 117, 48);;
+    position: relative;
+    top: -410px;
+}
+.about{
+    margin-top: -360px;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+h3{
+    color:rgb(206, 206, 189);
+    display: flex;
+    justify-content:flex-start;
+    font-size:50px;
+    margin-left: 80px;
+    background-size: 1000px;
+    padding: 10px;
+}
+.p{
+    display: grid;
+    grid-template-rows: 550px;
+    font-family: 'Poppins',sans-serif;
+    font-style: normal;
+    font-size:20px;
+    position: relative;
+    top: -30px;
+    /* border: 2px solid rgb(122, 122, 110); */
+    border:2px solid rgb(106, 98, 84);
+    margin-right: 80px;
+    color: rgb(146, 146, 132);
+    width: 800px;
+    height: 300px;
+    background-color: rgb(43, 42, 42);
+    padding:30px;
+    padding-bottom: 20px;
+    padding-top: -140px;
+    padding-right: 40px;
+    padding-left: 60px;
+    margin-left:94px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+} 
+
+.line{
+    width: 100%;
+    margin: 30px 0;
+    border-top: 1px dashed gray;
+}
+/* .line1{
+    border-top:4px solid rgb(55, 54, 54);
+    /* background-attachment: fixed; */
+  /* */ 
+
+.skills{
+    margin-left: 80px;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    gap: 7px;
+    margin-top: 10px;
+
+
+}
+
+.box{
+    background-color: rgb(60, 63, 63);
+    color: rgb(195, 202, 187);
+    width:150px;
+    height: 100px;
+    font-size: 22px;
+    margin-top: 5px;
+    border-radius: 5px;
+    border-radius: rgb(145, 123, 39);
+    border: 1px solid rgb(123, 117, 48);
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+    cursor: pointer;
+}
+.box:hover{
+    border: 2px solid;
+    border-color: rgb(145, 123, 39);
+    background:linear-gradient(rgb(91, 91, 52)); 
+}
+.box1{
+    color: rgb(135, 98, 5);
+}
+.category1{
+    color: rgb(147, 107, 34);
+    letter-spacing: 2px;
+    font-style:normal;
+    font-size: 15px;
+    font-weight: 40;
+    text-decoration: none;
+    
+    position: relative;
+    top:-20px;
+    left:29px
+}
+h4{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    position: relative;
+    right: 38px;
+    top: 10px;
+}
+.category2{
+    color: rgb(147, 107, 34);
+    font-size: 15px;
+    letter-spacing: 2px;
+    font-style: normal;
+
+    position: relative;
+    top:-20px;
+    left: 25px;
+}
+#myheader2{
+    margin-left: 18px;
+}
+.category3{
+    color: rgb(147, 107, 34);
+    font-size: 15px;
+    letter-spacing: 2px;
+    font-style: normal;
+
+    position: relative;
+    top:-20px;
+    left:58px;
+}
+#myheader3{
+    margin-left: 22px;
+}
+
+.category4{
+    color: rgb(147, 107, 34);
+    font-size: 15px;
+    letter-spacing: 2px;
+    font-style: normal;
+
+    position: relative;
+    top:-20px;
+    left:30px;
+}
+#myheader4{
+    margin-left: 5px;
+
+}
+
+.category5{
+    color: rgb(147, 107, 34);
+    font-size: 15px;
+    letter-spacing: 2px;
+    font-style: normal;
+
+    position: relative;
+    top:-20px;
+    left:26px;
+}
+#myheader5{
+    margin-left: -20px;
+}
+
+.category6{
+    color: rgb(147, 107, 34);
+    font-size: 15px;
+    letter-spacing: 2px;
+    font-style: normal;
+
+    position: relative;
+    top:-20px;
+    left:15px;
+}
+#myheader6{
+    margin-left: -10px;
+
+}
+.category7{
+    color: rgb(147, 107, 34);
+    font-size: 15px;
+    letter-spacing: 2px;
+    font-style: normal;
+
+    position: absolute;
+    margin-top: -20px;
+}
+#myheader7{
+    margin-right: -75px;
+}
+
+.category8{
+    color:rgb(147, 107, 34);
+    font-size: 15px;
+    letter-spacing: 2px;
+    font-style: normal;
+    font-weight: 500;
+
+    position: relative;
+    top:-20px;
+    left:15px;
+}
+#myheader8{
+    margin-left:-70px;
+    left:-20px
+}
+
+.education{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: flex-start;
+    border: 1px solid rgb(123, 117, 48);
+    border-radius: 5px;
+    background-color: rgb(60, 63, 63);
+    color: rgb(195, 202, 187);
+    width:1000px;
+    height:180px;
+    margin-left: 92px;
+}
+#edu{
+    font-family: Georgia;
+    font-size: 30px;
+    font-weight: 200;
+    margin-left: 140px;
+    color:rgb(206, 206, 189);
+}
+#clg{
+    position: relative;
+    bottom: -80px;
+    margin-left: -797px;
+    font-size: 20px;
+    font-family:Arial, Helvetica;
+}
+#year{
+    position: relative;
+    bottom: -120px;
+    margin-left: -425px; 
+    border: 1px solid gray;
+    color: orange;
+    border-radius: 20px;
+    width: 100px;
+    height:30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    letter-spacing: 2px;
+}
+
+#BE{
+    letter-spacing: 2px;
+    color: orange;
+    margin-left: -220px;
+    margin-top: 40px;
+}
+.myform{
+    margin-left: 700px;
+    color: rgb(206, 206, 189);
+    font-size: 25px;
+    font-weight: 400px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    position: relative;
+    top:-180px
+}
+
+.name{
+    width:400px;
+    height:40px;
+    font-size: 20px;
+    background-color: rgb(60, 63, 63);
+    color: rgb(195, 202, 187);
+    margin-top: 5px;
+    border-radius: 5px;
+    border-radius: rgb(145, 123, 39);
+    border: 1px solid rgb(123, 117, 48);
+    letter-spacing: 1px;
+}
+.name::selection{
+    border: 2px solid rgb(123, 117, 48);; ;
+}
+
+.email{
+    width:400px;
+    height:40px;
+    font-size: 20px;
+    background-color: rgb(60, 63, 63);
+    color: rgb(195, 202, 187);
+    margin-top: 5px;
+    border-radius: 5px;
+    border-radius: rgb(145, 123, 39);
+    border: 1px solid rgb(123, 117, 48);
+    letter-spacing: 1px;
+}
+.msg{
+    width:400px;
+    height:100px;
+    font-size: 20px;
+    background-color: rgb(60, 63, 63);
+    color: rgb(195, 202, 187);
+    margin-top: 5px;
+    border-radius: 5px;
+    border-radius: rgb(145, 123, 39);
+    border: 1px solid rgb(123, 117, 48);
+    letter-spacing: 1px;
+}
+.button{
+    width: 135px;
+    height:50px;
+    font-size: 20px;
+    font-style:normal;
+    background-color:  rgb(192, 183, 89);
+    color: rgb(60, 63, 63);
+    margin-top: 5px;
+    margin-left: 40px;
+    border-radius: 10px;
+    border-radius: rgb(145, 123, 39);
+    border: 1px solid rgb(123, 117, 48);
+    letter-spacing: 1px;
+}
+.button:hover{
+    background-color: rgb(60, 63, 63); 
+    border-radius: rgb(145, 123, 39);
+    border: 1px solid rgb(123, 117, 48);
+    color: rgb(195, 202, 187);
+    cursor: pointer;
+}
+.reset{
+    width: 135px;
+    height:50px;
+    font-size: 20px;
+    font-style:normal;
+    background-color: rgb(60, 63, 63);
+    color:rgb(195, 202, 187);
+    margin-top: 5px;
+    border-radius: 10px;
+    border-radius: rgb(145, 123, 39);
+    border: 1px solid rgb(123, 117, 48);
+    letter-spacing: 1px;
+    margin-left: 50px;
+}
+.reset:hover{
+    background-color:  rgb(145, 123, 39);
+    border-radius: rgb(145, 123, 39);
+    border: 1px solid rgb(123, 117, 48);
+    color: rgb(195, 202, 187);
+    cursor: pointer;
+}
+
+.contact{
+    color:rgb(123, 117, 48);
+    font-size: 25px;
+    margin-left: 97px;
+    margin-bottom: -20px;
+    position: relative;
+    margin-bottom: -20px;
+    top:30px;
+    display: grid;
+    gap: 10px;
+}
+.myform{
+    position: relative;
+    top:-222px;
+    font-family:'Times New Roman', Times, serif;
+    font-size: 18px;
+}
+
+.ph{
+    position: relative;
+    margin-top: -30px;
+    font-style: oblique;
+    font-family:'Times New Roman', Times, serif
+}
+.em{
+    position: relative;
+    margin-top: 10px;
+    font-style: oblique;
+    font-family:'Times New Roman', Times, serif
+}
+.lin{
+    position: relative;
+    margin-top: 10px;
+    font-style: oblique;
+    font-family:'Times New Roman', Times, serif
+}
+.phn{
+    color: rgb(195, 202, 187);
+    position: relative;
+    right: -5px;
+}
+.e{
+  color: rgb(195, 202, 187);
+  position: relative;
+  right: -5px;
+}
+.li{
+    color: rgb(195, 202, 187);
+    position: relative;
+    right: -5px;
+}
+.icon{
+    display: flex;
+    flex-wrap: nowrap;
+    gap: 30px;
+    margin-top: -20px;
+    margin-left: 70px;
+    cursor: pointer;
+}
+
+.line2{
+    width: 100%;
+    margin: 30px 0;
+    border-top: 1px dashed gray;
+    margin-top: -180px;
+}
+.line1{
+    color:rgb(195, 202, 187);
+    display: flex;
+    justify-content: center;
+    letter-spacing: 2px;
+    font-style: oblique;
+    padding-bottom: 60px;
+}
+.sahana{
+    color: rgb(195, 152, 73);
+}
+
+
+
+
+
+
+
