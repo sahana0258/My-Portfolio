@@ -51,7 +51,7 @@ A collection of my academic and personal projects.
 Contact
 
 A contact form through which visitors can send a message.
-
+g
 💻 How to Run
 
 1. Clone this repository.
