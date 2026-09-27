@@ -1,13 +1,16 @@
 <!DOCTYPE html>
 <html>
     <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Sahana Portfolio</title>
         <link rel="stylesheet" href="style.css">
-        <script scr="index.js"></script>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
     </head>
     <body>
-        <h2>Welcome to My Portfolio</h2>
+        <div class="body-container">
 
+        <div class="welcome-nav">   
+        <h2 id="h2">Welcome to My Portfolio</h2>
         <div>
             <nav class="nav">
                 <a class="a" href="#home">Home</a>
@@ -17,94 +20,90 @@
                 <a class="a" href="#con">Contact</a>
             </nav>
 
-        </div><br><br>
+        </div>
+        </div>
 
         <div class="container">
             <div>Hello,</div>
-            <div>I'm</div>
-            <div>Sahana <span>M</span></div>
-            <div>Software Developer</div>
-        </div><br>
-
-
-        <div class="line"></div>
-
-        <div class="profile">
-        <img src="sahanam.jpg" alt="sahana-img" width="200" height="200" >
+            <div>I'm Sahana <span>M</span></div>
+            <div id="sd">Software Developer</div>
         </div>
-      
+            
+        
 
-        <div id="about" class="about">
-            <div>
-                <h3>About Me</h3>
+            <h3 class="heading">About Me</h3>
+            <div class="aboutme-img" >
+                
+            <div class="myimg">
+            <img  id="img" src="sahanam.jpg" alt="sahana-img" width="100" height="100" >
+            </div> 
+
                 <p class="p">I'm Sahana M, a Software Developer passionate about building creative and responsive website.
-                Turning ideas into real world solutions.<br><br>
-                My work spans front-end interfaces built with HTML, CSS, JavaScript and React and back-end logic in Python and SQL. I like projects that mix structure with a bit of exploration, which is part of why building a trekking-focused website appealed to me as much as building my own portfolio.<br><br>
-                Outside of code, I'm drawn to the outdoors and the idea of mapping a route — which shows up more than once in the projects below.</p>
+                Turning ideas into real world solutions.
+                My work spans front-end interfaces built with HTML, CSS, JavaScript and React and back-end logic in Python and SQL. </p>
             </div>
-        </div>
 
         <div class="line"></div>
         
-        <h3 id="skills">Skills</h3>
+        <h3 class="heading">Skills</h3>
         <div class="skills">
             <div class="box">
-                <p class="category1">MARKUP</p>
-                <h4>HTML</h4>
+                <p class="category">MARKUP</p>
+                <h4 class="lang">HTML</h4>
             </div>
 
             <div class="box">
-                <p class="category2">STYLE</p>
-                <h4 id="myheader2">CSS</h4>
+                <p class="category">STYLE</p>
+                <h4 class="lang">CSS</h4>
             </div>
 
             <div class="box">
-                <p class="category3">LOGIC</p>
-                <h4 id="myheader3">JavaScript</h4>
+                <p class="category">LOGIC</p>
+                <h4 class="lang">JavaScript</h4>
             </div>
 
             <div class="box">
-                <p class="category4">LIBRARY</p>
-                <h4 id="myheader4">React</h4>
+                <p class="category">LIBRARY</p>
+                <h4 class="lang">React</h4>
             </div>
 
             <div class="box">
-                <p class="category5">LANGUAGE</p>
-                <h4 id="myheader5">Python</h4>
+                <p class="category">LANGUAGE</p>
+                <h4 class="lang">Python</h4>
             </div>
 
             <div class="box">
-                <p class="category6">DATABASE</p>
-                <h4 id="myheader6">SQL</h4>
+                <p class="category">DATABASE</p>
+                <h4 class="lang">SQL</h4>
+            </div>
+
+            <!-- <div class="box">
+                <p class="category">RUN TIME</p>
+                <h4 class="lang">Node js</h4>
             </div>
 
             <div class="box">
-                <p class="category7">RUN TIME</p>
-                <h4 id="myheader7">Node js</h4>
-            </div>
-
-            <div class="box">
-                <p class="category8">FRAMEWORK</p>
-                <h4 id="myheader8">Express js</h4>
-            </div>
-        </div><br><br>
+                <p class="category">FRAMEWORK</p>
+                <h4 class="lang">Express js</h4>
+            </div> -->
+        </div>
 
         <div class="line"></div>
 
-        <h3 id="education">Education</h3>
-        <div class="education"><br>
-            <p id="edu">Bachelor of Engineering — Computer Science & Engineering</p>
-            <div id="clg">Maharaja Institute of Technology, Thandavapura</div><br><br>
-            <div id="year">2022-2026</div><br><br>
-            <div id="BE">B.E (CSE)</div>
+        <h3 class="heading">Education</h3>
+        <div class="education">
+            <div id="Bachelor">Bachelor of Engineering- Computer Science & Engineering</div>
+            <div id="clg">Maharaja Institute of Technology, Thandavapura</div>
+            <div id="year">2022-2026</div>
+            <div id="BE">B.E(CSE)</div>
         </div>
 
 
         <div class="line"></div>
           
 
-        <h3 id="con">Contact</h3>
-        <div class="contact">
+        <h3 class="heading">Contact</h3>
+        <div class="contact-content">
             <p class="ph">
                 <i class="fa-solid fa-phone"></i><span class="phn">  +91 9353103950</span><br>
             </p>
@@ -116,7 +115,9 @@
             <p class="lin">
                 <i class="fa-brands fa-linkedin"></i>  <span class="li">  sahana-m-1b6526316</span>
             </p>
-            
+        </div>
+
+        <div class="contact-icons">
             <div class="icon">
             <p>
                 <a href="https://mail.google.com/mail/u/0/?tab=rm&ogbl" target="_blank" style="color:rgb(123, 117, 48);"><i class="fa-solid fa-envelope"></i></a>
@@ -149,7 +150,8 @@
             <div id="alertBox"></div>
         </form>
     <div class="line2"></div>
-    <div class="line1">Built & Designed by&nbsp; <div class="sahana"> Sahana M </div>&nbsp; &middot; &#169 2026</div><!---"&#169 or &copy" is used to diplay c, "$middot or &#183" is used middle (.)-->
-        </div>
+    <div class="line1">Built & Designed by Sahana M  &middot; &#169 2026</div><!---"&#169 or &copy" is used to diplay c, "$middot or &#183" is used middle (.)-->
+    </div>
+</div>
     </body>
 </html>
