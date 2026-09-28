@@ -498,7 +498,7 @@ html,body{
 .body-container{
     width: 100%;
     min-height: 100vh;
-    background-color: rgb(216, 204, 204);
+    background-color: rgb(22, 22, 22);
     height: 100%;
 }
 .welcome-nav{
@@ -640,6 +640,67 @@ span{
     font-family: monospace;
     font-size: 18px;
 }
+.project-contents{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    
+}
+.pbox{
+    border: 1px solid rgb(245, 242, 241);
+    width:520px;
+    height: 280px;
+    margin-left: 20px;
+    cursor: pointer;
+    border-radius: 5%;
+    box-shadow: 10px 5px 5px rgb(133, 13, 133);
+}
+.trek-content{
+    margin-left: 3%;
+}
+#web-app{
+    letter-spacing: 2px;
+    color: white;
+}
+#trek-web{
+    color: rgb(133, 13, 133);
+    font-size: -30%;
+}
+#trek-para{
+    font-size: 20px;
+    color: white;
+}
+.lang-used{
+    display: flex;
+    width: 78px;
+    justify-content: center;
+    align-items: center;
+    height: 30px;
+    border: 1px solid rgb(133, 13, 133);
+    border-radius: 13px;
+    margin-left:10%;
+    color: white;
+}
+.lang-used:hover{
+    border-color: rgb(246, 246, 3);
+}
+.lang-trek{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    font-family: monospace;
+}
+#personal-site{
+    color: white;
+    letter-spacing: 2px;
+}
+#portfolio-web{
+    color:rgb(133, 13, 133);
+    font-size: -30%;
+}
+#port-para{
+    color: white;
+    font-size: 20px;
+}
+
 .contact-content{
     display: flex;
     justify-content: center;
@@ -648,7 +709,6 @@ span{
 }
 .contact-icons{
     display: flex;
-    flex-direction: column;
     justify-content: center;
     align-items: center;
 }
@@ -710,9 +770,12 @@ span{
         font-size: clamp(17px,2vw,17px);
     }
     .education{
-        font-size: clamp(7px,2vw,7px);
+        font-size: clamp(10px,2vw,10px);
     }
-
+    .project-contents{
+    display: grid;
+    grid-template-columns: repeat(1,1fr);
+}
 
 }
 
