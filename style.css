@@ -494,11 +494,12 @@ html,body{
     margin: 0;
     padding: 0;
     height: 100%;
+    min-height: 100vh;
 }
 .body-container{
     width: 100%;
     min-height: 100vh;
-    background-color: rgb(22, 22, 22);
+    background-color: rgb(228, 224, 224);
     height: 100%;
 }
 .welcome-nav{
@@ -595,7 +596,7 @@ span{
 .box:hover{
     border: 1px solid;
     border-color: rgb(246, 246, 3);
-    background:linear-gradient(rgb(45, 1, 40)); 
+    background:linear-gradient(rgb(87, 2, 77)); 
     box-shadow:  white(5px 5px 5px);
     
 }
@@ -623,11 +624,12 @@ span{
     border: 1px solid rgb(151, 5, 151); 
     height: 200px;
     font-size: clamp(20px,2vw,20px);
-    color: white;
+    color:rgb(227, 212, 212)
 }
 #Bachelor{
     color:rgb(151, 5, 151);
     font-weight: bold;
+    font-size: 25px;
 }
 #BE{
     border: 1px solid rgb(151, 5, 151);
@@ -667,7 +669,7 @@ span{
 }
 #trek-para{
     font-size: 20px;
-    color: white;
+    color: rgb(200, 185, 185);
 }
 .lang-used{
     display: flex;
@@ -675,10 +677,10 @@ span{
     justify-content: center;
     align-items: center;
     height: 30px;
-    border: 1px solid rgb(133, 13, 133);
+    border: 1px solid white;
     border-radius: 13px;
     margin-left:10%;
-    color: white;
+    color:  rgb(133, 13, 133);
 }
 .lang-used:hover{
     border-color: rgb(246, 246, 3);
@@ -697,7 +699,7 @@ span{
     font-size: -30%;
 }
 #port-para{
-    color: white;
+    color: rgb(200, 185, 185);
     font-size: 20px;
 }
 
@@ -706,13 +708,44 @@ span{
     justify-content: center;
     align-items: center;
     justify-content: space-evenly;
+    font-size: 20px;
+}
+.ph-em-lin{
+    color: rgb(200, 185, 185);
+    margin-top: -10px;
+    font-style: italic;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+.p-e-l{
+    color: antiquewhite;
 }
 .contact-icons{
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
 }
-.myform{
+.icon{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    font-size:clamp(35px,2vw,35px);
+    margin-top: -5px;
+}
+.form-content{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.btn-reset{
+    display: flex;
+
+}
+.placehoder{
+
+
 }
 
 
@@ -753,12 +786,14 @@ span{
 
 
 @media(max-width:480px){
-     body{
-        background-color: red !important;
+    .body-container{
+        width: 100%;
+        padding: 20px;
+        box-sizing: border-box;
     }
     .skills{
     display: grid;
-    grid-template-columns: repeat(1,1fr);
+    grid-template-columns: repeat(2,1fr);
     gap: 20px;
     flex-wrap: nowrap;
     }
@@ -770,11 +805,12 @@ span{
         font-size: clamp(17px,2vw,17px);
     }
     .education{
-        font-size: clamp(10px,2vw,10px);
+        font-size: clamp(15px,2vw,15px);
     }
     .project-contents{
     display: grid;
     grid-template-columns: repeat(1,1fr);
+    gap:15px;
 }
 
 }
