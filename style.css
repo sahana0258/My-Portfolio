@@ -572,6 +572,7 @@ span{
 .myimg{
     border-radius: 100%;
     box-shadow: 5px 5px 5px rgb(87, 2, 98);
+    margin-right: 20%;
 }
 .heading{
     display: flex;
@@ -585,6 +586,7 @@ span{
     border-radius: 100%;
     display: flex;
     justify-content:left;
+    
 }
 .skills{
     display: grid;
@@ -999,7 +1001,8 @@ textarea{
         font-size: 28px;
      }
     #h2 {
-        font-size: 24px; text-align: center; 
+        font-size: 24px; 
+        text-align: center; 
     }
 
     .aboutme-img {
@@ -1049,7 +1052,8 @@ textarea{
         width: 100%; 
         height: auto; 
         margin-left: 0; 
-        padding-bottom: 16px; }
+        padding-bottom: 16px; 
+    }
     .lang-trek { 
         grid-template-columns: repeat(2, 1fr); 
         gap: 8px; 

@@ -36,7 +36,6 @@ function submitting()
     var name=document.getElementById("name1").value;
     var email=document.getElementById("email1").value;
     var msg=document.getElementById("msg1").value;
-    var btn=document.getElementById("btn1").value;
 
     if(name==""&&email==""&&msg==""){
         alert("Please enter your details");
@@ -49,4 +48,5 @@ function submitting()
         alert("Please enter your name");
     else
         alert("Thank you! Your message has been submitted");
+    
 }
