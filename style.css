@@ -489,8 +489,10 @@ h4{
 
 
 /*//new css code start//*/
+
+*, *::before, *::after { box-sizing: border-box; }
 html,body{
-    display: grid;
+    display: block;
     margin: 0;
     padding: 0;
     height: 100%;
@@ -508,6 +510,7 @@ html,body{
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    font-size: 150%;
     color: rgb(133, 13, 133);
 }
 
@@ -521,7 +524,7 @@ html,body{
     justify-content: center;
     align-items: center;
     gap: 10%;
-    font-size:clamp(17px,2vw,17px);
+    font-size:70%
 }
 .a{
     color: aliceblue;
@@ -548,6 +551,7 @@ span{
 .aboutme-img{
     display: grid;
     grid-template-columns: repeat(2,1fr);
+    margin: 0 auto;
     display: flex;
     justify-content: flex-end;
     align-items: center;
@@ -557,7 +561,8 @@ span{
     width: 90%;
     padding: 10px;
     color: rgb(249, 248, 246);
-    font-family:Verdana, Geneva, Tahoma, sans-serif
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    box-shadow: 5px 5px 5px rgb(87, 2, 98);
  }
  .p{
     font-style: oblique;
@@ -566,20 +571,20 @@ span{
 }
 .myimg{
     border-radius: 100%;
+    box-shadow: 5px 5px 5px rgb(87, 2, 98);
 }
 .heading{
     display: flex;
     justify-content: center;
     align-items: center;
     font-family: Georgia, 'Times New Roman', Times, serif;
-    font-size: clamp(40px,3vw,4px);
+    font-size: clamp(28px,5vw,40px);
     color: rgb(133, 13, 133);
 }
 #img{
     border-radius: 100%;
     display: flex;
     justify-content:left;
-    align-items:self-start
 }
 .skills{
     display: grid;
@@ -596,7 +601,7 @@ span{
     margin-top: 2%;
     cursor: pointer;
     border-radius: 5%;
-    box-shadow: 10px 5px 5px rgb(133, 13, 133);
+    box-shadow: 7px 7px 7px rgb(133, 13, 133);
 }
 .box:hover{
     border: 1px solid;
@@ -650,16 +655,17 @@ span{
 .project-contents{
     display: grid;
     grid-template-columns: repeat(2,1fr);
+    margin: 0 auto;
     
 }
 .pbox{
     border: 1px solid rgb(245, 242, 241);
     width:520px;
     height: 280px;
-    margin-left: 20px;
+    margin: 0 auto;
     cursor: pointer;
     border-radius: 5%;
-    box-shadow: 10px 5px 5px rgb(133, 13, 133);
+    box-shadow: 3px 3px 3px rgb(133, 13, 133);
 }
 .trek-content{
     margin-left: 3%;
@@ -818,7 +824,7 @@ textarea{
 
 
 
-
+/*my code/*
 /* @media(max-width:480px){
     .aboutme-img{
     display: grid;
@@ -832,18 +838,42 @@ textarea{
 } */
 
 
-@media(max-width:480px){
-    .body-container{
-        width: 100%;
-        padding: 20px;
+/* @media(max-width:480px){
+    *{
         box-sizing: border-box;
     }
+    body{
+        width:100%;
+        margin: 0 auto;
+    }
+    .body-container{
+        width: 100%;
+        max-width: 100%;
+        box-sizing: border-box;
+        margin: 0 auto;
+        grid-template-columns: 1fr;
+        justify-content: center;
+    }
+    .aboutme-img {
+        flex-direction: column;
+        height: auto;
+        width: 90%;
+        margin: 5% auto 0;
+        gap: 16px;
+    }
+    .p { width: 100%; }
+    #img { margin: 0 auto; }
+
     .skills{
     display: grid;
     grid-template-columns: repeat(2,1fr);
     gap: 20px;
     flex-wrap: nowrap;
     }
+    .box{
+        margin: 0 auto;
+    }
+
     .contact-content{
         display: flex;
         flex-direction: column;
@@ -851,21 +881,146 @@ textarea{
         align-items: center;
         font-size: clamp(17px,2vw,17px);
     }
-    .education{
-        font-size: clamp(10px,2vw,10px);
+    #Bachelor{
+    color:rgb(151, 5, 151);
+    font-weight: bold;
+    font-size: 18px;
     }
+    .education{
+        font-size: 18px;
+    }  
     .project-contents{
     display: grid;
     grid-template-columns: repeat(1,1fr);
     gap:15px;
     margin-right: 20px;
+
+    .lang-trek {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 8px;
+    }
+    .lang-used { margin-left: 0; justify-self: center; }
 }
 
+} */
+
+
+
+
+
+
+/* claud 1st code*/
+/* @media (max-width: 480px) {
+    body { width: 100%; }   /* was 500px, this was the main bug */
+
+    /* .nav {
+        flex-wrap: wrap;
+        gap: 12px 20px;
+        padding: 0 10px;
+    }
+
+    .container { text-align: center; }
+
+    .aboutme-img {
+        flex-direction: column;
+        height: auto;
+        width: 90%;
+        margin: 5% auto 0;
+        gap: 16px;
+    }
+    .p { width: 100%; }
+    #img { margin: 0 auto; }
+
+    .skills {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 12px;
+        justify-items: center;
+        padding: 0 16px;
+    }
+    .box { width: 100%; max-width: 150px; }
+
+    .education {
+        height: auto;
+        padding: 16px;
+        margin: 0 16px;
+        text-align: center;
+        gap: 10px;
+        font-size: 14px;
+    }
+
+    .project-contents {
+        grid-template-columns: 1fr;
+        gap: 20px;
+        padding: 0 16px;
+        margin: 0;
+    }
+    .pbox {
+        width: 100%;      /* was 520px */
+        /* height: auto;     /* was 280px */
+        /* margin-left: 0;
+        padding-bottom: 16px;
+    }
+    .lang-trek {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 8px;
+    }
+    .lang-used { margin-left: 0; justify-self: center; }
+
+    .contact-content {
+        flex-direction: column;
+        font-size: 17px;
+    }
+
+    .form-content { margin: 0 16px; } 
+    input, textarea { width: 100%; }
+    .bt-rst { width: 100%; height: auto; } 
+} */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.skills { flex-wrap: wrap; gap: 12px; }
+.nav    { flex-wrap: wrap; gap: 10px 20px; }
+
+@media (max-width: 480px) {
+    .heading { font-size: 28px; }
+    #h2 { font-size: 24px; text-align: center; }
+
+    .aboutme-img {
+        flex-direction: column;
+        height: auto;
+        width: 90%;
+        margin: 5% auto 0;
+        gap: 16px;
+    }
+    .p { width: 100%; }
+
+    .skills { padding: 0 16px;flex-wrap: wrap; }
+
+    .education { height: auto; padding: 16px; margin: 0 16px; text-align: center; }
+
+    .project-contents { grid-template-columns: 1fr; gap: 20px; padding: 0 16px; }
+    .pbox { width: 100%; height: auto; margin-left: 0; padding-bottom: 16px; }
+    .lang-trek { grid-template-columns: repeat(2, 1fr); gap: 8px; }
+    .lang-used { margin-left: 0; justify-self: center; }
+
+    .contact-content { flex-direction: column; }
+    .form-content { margin: 0 16px; }
+    input, textarea { width: 100%; }
+    .bt-rst { width: 100%; height: auto; }
 }
-
-
-
-
 
 
 
