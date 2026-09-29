@@ -756,11 +756,11 @@ input{
     width: 30%;
     height: 30px;
     color: rgb(9, 9, 9);
-    background-color: antiquewhite;
+    background-color: rgb(234, 170, 234);
     border: 3px soild rgb(133, 13, 133);
 }
 textarea{
-    background-color: antiquewhite;
+    background-color: rgb(220, 174, 220);
     border: 3px soild rgb(133, 13, 133);
 }
 
@@ -824,7 +824,7 @@ textarea{
 
 
 
-/*my code/*
+/*1 code/*
 /* @media(max-width:480px){
     .aboutme-img{
     display: grid;
@@ -909,7 +909,7 @@ textarea{
 
 
 
-/* claud 1st code*/
+/* reset code*/
 /* @media (max-width: 480px) {
     body { width: 100%; }   /* was 500px, this was the main bug */
 
@@ -995,8 +995,12 @@ textarea{
 .nav    { flex-wrap: wrap; gap: 10px 20px; }
 
 @media (max-width: 480px) {
-    .heading { font-size: 28px; }
-    #h2 { font-size: 24px; text-align: center; }
+    .heading { 
+        font-size: 28px;
+     }
+    #h2 {
+        font-size: 24px; text-align: center; 
+    }
 
     .aboutme-img {
         flex-direction: column;
@@ -1007,19 +1011,75 @@ textarea{
     }
     .p { width: 100%; }
 
-    .skills { padding: 0 16px;flex-wrap: wrap; }
+    .skills { 
+        padding: 0 16px;
+        flex-wrap: wrap; 
+    }
 
-    .education { height: auto; padding: 16px; margin: 0 16px; text-align: center; }
+    .education { 
+        height: auto; 
+        padding: 16px; 
+        margin: 0 16px; 
+        text-align: center; 
+        gap: 10px;
+    }
+    #Bachelor{
+    color:rgb(151, 5, 151);
+    font-weight: bold;
+    font-size: 15px;
+    }
+    #clg{
+        font-size: 14px;
+    }
+    #year{
+        font-size: 14px;
+    }
+    #BE{
+        font-size: 14px;
+        height:30px;
+        width: 80px;
+    }
 
-    .project-contents { grid-template-columns: 1fr; gap: 20px; padding: 0 16px; }
-    .pbox { width: 100%; height: auto; margin-left: 0; padding-bottom: 16px; }
-    .lang-trek { grid-template-columns: repeat(2, 1fr); gap: 8px; }
-    .lang-used { margin-left: 0; justify-self: center; }
+    .project-contents { 
+        grid-template-columns: 1fr; 
+        gap: 20px; 
+        padding: 0 16px; 
+    }
+    .pbox { 
+        width: 100%; 
+        height: auto; 
+        margin-left: 0; 
+        padding-bottom: 16px; }
+    .lang-trek { 
+        grid-template-columns: repeat(2, 1fr); 
+        gap: 8px; 
+    }
+    .lang-used { 
+        margin-left: 0; 
+        justify-self: center; 
+    }
 
-    .contact-content { flex-direction: column; }
-    .form-content { margin: 0 16px; }
-    input, textarea { width: 100%; }
-    .bt-rst { width: 100%; height: auto; }
+    .contact-content { 
+        flex-direction: column; 
+    }
+    .form-content {
+        margin: 0 16px; 
+    }
+    input, textarea {
+        width: 100%; 
+    }
+    .bt-rst { 
+        width: 100%; height: auto; 
+    }
+    .line{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: aliceblue;
+    letter-spacing: 2px;
+    font-size:13px;
+}
+
 }
 
 
